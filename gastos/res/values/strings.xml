@@ -4,5 +4,9 @@
     <string name="app_name">gastos</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="lblIngreGas">Ingreso / Gasto</string>
+    <string name="lblResumen">Resumen</string>
+    <string name="lblListado">Listado</string>
+    <string name="title_activity_ingre_gas">IngreGasActivity</string>
 
 </resources>
