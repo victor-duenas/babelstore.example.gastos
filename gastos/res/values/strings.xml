@@ -8,5 +8,11 @@
     <string name="lblResumen">Resumen</string>
     <string name="lblListado">Listado</string>
     <string name="title_activity_ingre_gas">IngreGasActivity</string>
+    <string name="intImporte">Introduzca Importe:</string>
+    <string name="intFecha">Elija Fecha:</string>
+    <string name="tipoGasto">Tipo Gasto:</string>
+    <string name="ingreso">Ingreso</string>
+    <string name="gasto">Gasto</string>
+    <string name="anadir">Añadir</string>
 
 </resources>
