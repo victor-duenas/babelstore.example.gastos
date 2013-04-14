@@ -6,6 +6,9 @@ import android.view.Menu;
 
 public class IngreGasActivity extends Activity {
 
+	/**
+	 * Prueba
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
