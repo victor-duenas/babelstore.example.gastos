@@ -1,64 +1,93 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".IngreGasActivity" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".IngresoGasActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lblNuevoIngreGas"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intImporte" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number" />
-
+        android:layout_centerHorizontal="true"
+        android:textSize="8pt"
+        android:text="@string/lblNuevoIngreGas" />
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/lblCantidadGasto"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intFecha" />
-
-    <DatePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-        android:calendarViewShown="false"/>
-
+        android:text="@string/lblCantidadGasto" 
+        android:textSize="10pt"
+        android:layout_below="@id/lblNuevoIngreGas"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"/>
+    <EditText 
+        android:id="@+id/cantidad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/infoCantidad"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/lblCantidadGasto"
+        android:layout_alignParentLeft="true"
+        />
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:id="@+id/lblFechaOperacion"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tipoGasto" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-        <RadioButton
-            android:id="@+id/radio0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/ingreso" />
-
-        <RadioButton
-            android:id="@+id/radio1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/gasto" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:text="@string/lblFechaOperacion" 
+        android:textSize="10pt"
+        android:layout_below="@id/cantidad"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"/>
+    <Button 
+        android:id="@+id/btnNuevaFecha"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/anadir" />
+        android:onClick="anadirIngresoGasto"
+        android:layout_below="@id/lblFechaOperacion"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/lblTipoMovimiento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTipoMovimiento" 
+        android:textSize="10pt"
+        android:layout_below="@id/btnNuevaFecha"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"/>
+    <RadioGroup 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/radioTipoMov"
+	    android:layout_below="@id/lblTipoMovimiento"
+        android:layout_alignParentLeft="true"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="5dp">
+	    <RadioButton android:id="@+id/radioIngreso"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lblIngreso"
+	        android:checked="true"/>
+	    <RadioButton android:id="@+id/radioGasto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lblGasto"
+	        android:checked="false"/>
+	</RadioGroup>
+    <Button 
+        android:id="@+id/btnAnadirMovimiento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="anadirIngresoGasto"
+        android:text="@string/lblBotonAnadir"
+        android:layout_below="@id/radioTipoMov"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        />
+    
+    
 
-</LinearLayout>
+</RelativeLayout>

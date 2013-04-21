@@ -7,12 +7,18 @@
     <string name="lblIngreGas">Ingreso / Gasto</string>
     <string name="lblResumen">Resumen</string>
     <string name="lblListado">Listado</string>
+    <string name="lblNuevoIngreGas">Nuevo movimiento</string>
+    <string name="lblBotonAnadir">Añadir</string>
+    <string name="lblBotonCancelar">Cancelar</string>
+    <string name="lblCantidadGasto">Importe</string>
+    <string name="lblFechaOperacion">Fecha operación</string>
+    <string name="lblIngreso">Ingreso</string>
+    <string name="lblGasto">Gasto</string>
+    <string name="lblAnadirFecha">Cambiar</string>
+    <string name="lblTipoMovimiento">Tipo de movimiento</string>
     <string name="title_activity_ingre_gas">IngreGasActivity</string>
-    <string name="intImporte">Introduzca Importe:</string>
-    <string name="intFecha">Elija Fecha:</string>
-    <string name="tipoGasto">Tipo Gasto:</string>
-    <string name="ingreso">Ingreso</string>
-    <string name="gasto">Gasto</string>
-    <string name="anadir">Añadir!!!!</string>
+    
+    <string name="infoCantidad">Introduzca una cantidad</string>
+    
 
 </resources>

@@ -18,9 +18,9 @@ public class MainActivity extends Activity {
 		btnIngreGas = (Button)findViewById(R.id.btnIngreGas);
 		btnIngreGas.setOnClickListener(new OnClickListener() {
         	public void onClick(View v) {
-        		// Iniciamos la actividad
         		Intent intent = new Intent();
-        		intent.setClass(getApplicationContext(), IngreGasActivity.class);
+        		// Leemos lo que se ha introducido en la caja de texto
+        		intent.setClass(getApplicationContext(), IngresoGasActivity.class);
         		startActivity(intent);
         	}
         });
